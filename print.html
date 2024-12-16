@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="onediv">
+        one div print the one page 
+    <button onclick="myfun(onediv)">divone</button>
+    </div>
+
+    <div id="twodiv">
+        one div print the one page 
+    <button onclick="myfun(twodiv)">divtwo</button>
+    </div>
+
+    <div id="threediv">
+        one div print the one page 
+    <button onclick="myfun(threediv)">divthree</button>
+    </div>
+
+    <button onclick="mywholepage()">wholepage</button>
+
+    <script type="text/javascript">
+         function mywholepage(){
+            window.print();
+         }
+
+         function myfun(paravalue){
+            var backup =document.body.innerHTML;
+            var devcontent =document.getElementById(paravalue).innerHTML;
+         }
+    </script>
+</body>
+</html>

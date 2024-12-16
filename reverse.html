@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reverse a String</h1>
+    <input type="text"  name="" id="reversethename" onkeyup="reversestring()">
+    <input type="text"  name="" id="showdata">
+
+   <script>
+    function reversestring(){
+    var str=document.getElementById('reversethename').value;
+    var resstring="";
+
+    for(var i=str.length-1;i>=0;i--)
+    {
+        newString += str[i];
+    }
+    document.getElementById('showdata').value=newString;
+    }
+   </script>
+</body>
+</html>
